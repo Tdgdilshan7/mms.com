@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muskan Meat Shop | Premium Halal Meats & Fresh Cuts</title>
+    <!-- Tailwind CSS for modern, high-level utility styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for high-end icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        crimson: {
+                            DEFAULT: '#990000',
+                            light: '#C70039',
+                            dark: '#5A0000'
+                        },
+                        meatdark: {
+                            DEFAULT: '#0F0909',
+                            card: '#1A0E0E'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background: rgba(15, 9, 9, 0.85);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .crimson-gradient-text {
+            background: linear-gradient(135deg, #FF4D4D 0%, #C70039 50%, #990000 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Custom scrollbar for high-end feel */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0F0909;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #990000;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-meatdark text-gray-100 font-sans antialiased selection:bg-crimson selection:text-white">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-crimson/20">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-full border border-crimson flex items-center justify-center bg-crimson/10">
+                    <i class="fa-solid fa-fire text-crimson text-sm"></i>
+                </div>
+                <div>
+                    <h1 class="font-serif text-xl font-bold tracking-wider crimson-gradient-text">MUSKAN MEAT SHOP</h1>
+                    <p class="text-[10px] tracking-widest text-gray-400 uppercase">Premium Farm Fresh Cuts</p>
+                </div>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#home" class="text-crimson-light hover:text-white transition">Home</a>
+                <a href="#menu" class="text-gray-300 hover:text-crimson-light transition">Cut Menu</a>
+                <a href="#rates" class="text-gray-300 hover:text-crimson-light transition">PNG Price Sheet</a>
+                <a href="#about" class="text-gray-300 hover:text-crimson-light transition">Standards</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="#rates" class="hidden sm:inline-flex items-center space-x-2 bg-gradient-to-r from-crimson-dark via-crimson to-crimson-light text-white font-semibold px-5 py-2.5 rounded-full text-xs tracking-wider uppercase shadow-lg hover:opacity-95 transition">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <span>Download PNG Rate</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-meatdark-card via-meatdark to-black">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#990000_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
+        <div class="max-w-5xl mx-auto px-6 text-center relative z-10 py-20">
+            <span class="inline-block py-1 px-4 rounded-full border border-crimson/40 text-crimson-light text-xs tracking-[0.2em] uppercase mb-6 bg-crimson/5">
+                100% Halal & Farm Fresh
+            </span>
+            <h1 class="font-serif text-5xl md:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                Handcrafted Cuts of <span class="crimson-gradient-text italic">Uncompromising</span> Quality
+            </h1>
+            <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto mb-10 font-light leading-relaxed">
+                Welcome to Muskan Meat Shop. Providing hygienically processed, tender, farm-selected mutton, chicken, and exotic cuts daily for your ultimate culinary experience.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#menu" class="w-full sm:w-auto px-8 py-4 bg-crimson text-white font-bold rounded-full text-sm tracking-wider uppercase transition hover:bg-crimson-light shadow-xl shadow-crimson/10">
+                    Explore Cut Menu
+                </a>
+                <a href="#rates" class="w-full sm:w-auto px-8 py-4 border border-crimson/40 text-crimson-light font-bold rounded-full text-sm tracking-wider uppercase transition hover:bg-crimson/10">
+                    View Official Rates
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Showcase Section -->
+    <section id="menu" class="py-24 bg-meatdark-card/50 border-t border-b border-crimson/10 relative">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-serif text-3xl md:text-4xl font-bold mb-4 crimson-gradient-text">The Butcher's Selection</h2>
+                <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-crimson to-transparent mx-auto mb-4"></div>
+                <p class="text-gray-400 text-sm">Every cut is freshly processed in a temperature-controlled sterile facility, ensuring optimum tenderness, flavor, and food safety.</p>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="bg-meatdark-card border border-crimson/20 rounded-2xl p-6 relative group hover:border-crimson transition duration-300">
+                    <div class="absolute top-4 right-4 bg-crimson/15 text-crimson-light text-xs px-2.5 py-1 rounded-full border border-crimson/30">Bestseller</div>
+                    <div class="h-48 rounded-xl bg-gradient-to-br from-red-950/40 to-neutral-900/50 mb-6 flex items-center justify-center border border-crimson/10 group-hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-drumstick-bite text-crimson text-4xl opacity-80"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 text-white">Prime Mutton Curry Cut</h3>
+                    <p class="text-gray-400 text-xs mb-4 leading-relaxed">Tender bone-in goat meat cuts from select young grain-fed stock, perfect for slow-cooked gravies and stews.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-crimson-light font-semibold text-sm">₹780 / 500g</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Fresh Goat</span>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="bg-meatdark-card border border-crimson/20 rounded-2xl p-6 relative group hover:border-crimson transition duration-300">
+                    <div class="absolute top-4 right-4 bg-crimson/15 text-crimson-light text-xs px-2.5 py-1 rounded-full border border-crimson/30">Boneless</div>
+                    <div class="h-48 rounded-xl bg-gradient-to-br from-red-950/40 to-neutral-900/50 mb-6 flex items-center justify-center border border-crimson/10 group-hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-utensils text-crimson text-4xl opacity-80"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 text-white">Chicken Breast Boneless</h3>
+                    <p class="text-gray-400 text-xs mb-4 leading-relaxed">Lean, skinless breast fillets cleaned to precision. Ideal for fitness meal prep, grilling, and pan-searing.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-crimson-light font-semibold text-sm">₹240 / 500g</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Daily Broiler</span>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="bg-meatdark-card border border-crimson/20 rounded-2xl p-6 relative group hover:border-crimson transition duration-300">
+                    <div class="absolute top-4 right-4 bg-crimson/15 text-crimson-light text-xs px-2.5 py-1 rounded-full border border-crimson/30">Special</div>
+                    <div class="h-48 rounded-xl bg-gradient-to-br from-red-950/40 to-neutral-900/50 mb-6 flex items-center justify-center border border-crimson/10 group-hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-burger text-crimson text-4xl opacity-80"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 text-white">Hand-Ground Mutton Keema</h3>
+                    <p class="text-gray-400 text-xs mb-4 leading-relaxed">Finely minced premium mutton with optimal fat ratio for succulent kebabs, cutlets, and keema mattar.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-crimson-light font-semibold text-sm">₹820 / 500g</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Fine Minced</span>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="bg-meatdark-card border border-crimson/20 rounded-2xl p-6 relative group hover:border-crimson transition duration-300">
+                    <div class="h-48 rounded-xl bg-gradient-to-br from-red-950/40 to-neutral-900/50 mb-6 flex items-center justify-center border border-crimson/10 group-hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-otter text-crimson text-4xl opacity-80"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 text-white">Whole Chicken (Skinless)</h3>
+                    <p class="text-gray-400 text-xs mb-4 leading-relaxed">Cleaned whole broiler chicken tailored for traditional roasting, rotisserie, or large family gatherings.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-crimson-light font-semibold text-sm">₹380 / Whole (Approx 1.2kg)</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Whole Fresh</span>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="bg-meatdark-card border border-crimson/20 rounded-2xl p-6 relative group hover:border-crimson transition duration-300">
+                    <div class="h-48 rounded-xl bg-gradient-to-br from-red-950/40 to-neutral-900/50 mb-6 flex items-center justify-center border border-crimson/10 group-hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-fish text-crimson text-4xl opacity-80"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 text-white">River Rohu Fish Cuts</h3>
+                    <p class="text-gray-400 text-xs mb-4 leading-relaxed">Fresh freshwater Rohu slices, cleaned thoroughly, scaled, and packed with Omega-3 goodness.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-crimson-light font-semibold text-sm">₹320 / 500g</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Freshwater</span>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="bg-meatdark-card border border-crimson/20 rounded-2xl p-6 relative group hover:border-crimson transition duration-300">
+                    <div class="absolute top-4 right-4 bg-crimson/15 text-crimson-light text-xs px-2.5 py-1 rounded-full border border-crimson/30">Grill Pack</div>
+                    <div class="h-48 rounded-xl bg-gradient-to-br from-red-950/40 to-neutral-900/50 mb-6 flex items-center justify-center border border-crimson/10 group-hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-fire-flame-curved text-crimson text-4xl opacity-80"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold mb-2 text-white">Muskan BBQ Chicken Wings</h3>
+                    <p class="text-gray-400 text-xs mb-4 leading-relaxed">Juicy chicken wing sections pre-trimmed and packed for weekend barbecues, air frying, and frying.</p>
+                    <div class="flex items-center justify-between pt-4 border-t border-gray-800">
+                        <span class="text-crimson-light font-semibold text-sm">₹280 / 500g</span>
+                        <span class="text-xs text-gray-400 uppercase tracking-widest">Party Pack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PNG Rate Card Section -->
+    <section id="rates" class="py-24 max-w-5xl mx-auto px-6">
+        <div class="bg-gradient-to-b from-meatdark-card to-black border border-crimson/30 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+            <div class="absolute -right-20 -top-20 w-64 h-64 bg-crimson/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-12">
+                <div>
+                    <span class="text-xs tracking-[0.2em] text-crimson-light uppercase font-semibold">Official Documentation</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold mt-2 crimson-gradient-text">PNG Rate Sheet Generator</h2>
+                    <p class="text-gray-400 text-sm mt-2">Download our verified, high-resolution PNG pricing catalogue directly for your kitchen stock records.</p>
+                </div>
+                <button onclick="generatePNGRateCard()" class="px-6 py-3.5 bg-gradient-to-r from-crimson-dark via-crimson to-crimson-light text-white font-bold rounded-xl text-xs tracking-wider uppercase shadow-lg hover:scale-105 transition flex items-center space-x-2">
+                    <i class="fa-solid fa-download"></i>
+                    <span>Download PNG Rate Card</span>
+                </button>
+            </div>
+
+            <!-- Preview Table of Rates -->
+            <div class="overflow-x-auto rounded-xl border border-crimson/20">
+                <table class="w-full text-left text-sm text-gray-300">
+                    <thead class="bg-crimson/10 text-crimson-light uppercase text-xs tracking-wider border-b border-crimson/20">
+                        <tr>
+                            <th class="py-4 px-6">Cut / Product Name</th>
+                            <th class="py-4 px-6">Category</th>
+                            <th class="py-4 px-6">Standard Unit</th>
+                            <th class="py-4 px-6 text-right">Standard Rate (INR)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-800">
+                        <tr class="hover:bg-crimson/5 transition">
+                            <td class="py-4 px-6 font-medium text-white">Prime Mutton Curry Cut</td>
+                            <td class="py-4 px-6 text-gray-400">Mutton / Goat</td>
+                            <td class="py-4 px-6 text-gray-400">500 Grams</td>
+                            <td class="py-4 px-6 text-right text-crimson-light font-semibold">₹780</td>
+                        </tr>
+                        <tr class="hover:bg-crimson/5 transition">
+                            <td class="py-4 px-6 font-medium text-white">Chicken Breast Boneless</td>
+                            <td class="py-4 px-6 text-gray-400">Chicken</td>
+                            <td class="py-4 px-6 text-gray-400">500 Grams</td>
+                            <td class="py-4 px-6 text-right text-crimson-light font-semibold">₹240</td>
+                        </tr>
+                        <tr class="hover:bg-crimson/5 transition">
+                            <td class="py-4 px-6 font-medium text-white">Hand-Ground Mutton Keema</td>
+                            <td class="py-4 px-6 text-gray-400">Mutton / Goat</td>
+                            <td class="py-4 px-6 text-gray-400">500 Grams</td>
+                            <td class="py-4 px-6 text-right text-crimson-light font-semibold">₹820</td>
+                        </tr>
+                        <tr class="hover:bg-crimson/5 transition">
+                            <td class="py-4 px-6 font-medium text-white">Whole Chicken (Skinless)</td>
+                            <td class="py-4 px-6 text-gray-400">Chicken</td>
+                            <td class="py-4 px-6 text-gray-400">1.2 Kg Unit</td>
+                            <td class="py-4 px-6 text-right text-crimson-light font-semibold">₹380</td>
+                        </tr>
+                        <tr class="hover:bg-crimson/5 transition">
+                            <td class="py-4 px-6 font-medium text-white">River Rohu Fish Cuts</td>
+                            <td class="py-4 px-6 text-gray-400">Fish / Seafood</td>
+                            <td class="py-4 px-6 text-gray-400">500 Grams</td>
+                            <td class="py-4 px-6 text-right text-crimson-light font-semibold">₹320</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="mt-6 flex items-center justify-between text-xs text-gray-500">
+                <span>* 100% Halal certified processing. Weights measured post-cleaning.</span>
+                <span class="text-crimson-light font-mono">MUSKAN-MEAT-RATE-2026.PNG</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="about" class="bg-black border-t border-crimson/20 py-16 text-gray-400 text-sm">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <div class="w-8 h-8 rounded-full border border-crimson flex items-center justify-center bg-crimson/10">
+                        <i class="fa-solid fa-fire text-crimson text-xs"></i>
+                    </div>
+                    <h2 class="font-serif text-lg font-bold text-white tracking-wider">MUSKAN MEAT SHOP</h2>
+                </div>
+                <p class="text-xs leading-relaxed text-gray-400">
+                    Your trusted destination for premium quality Halal meats. Strict adherence to veterinary hygiene standards, cold-chain preservation, and precise expert cuts.
+                </p>
+            </div>
+            <div>
+                <h3 class="font-serif text-white font-semibold mb-4 text-sm tracking-wider uppercase">Contact Shop</h3>
+                <ul class="space-y-2 text-xs">
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-location-dot text-crimson-light"></i><span>Fresh Market Square, Block 4, India</span></li>
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-phone text-crimson-light"></i><span>+91 98765 11223 / +91 91234 55667</span></li>
+                    <li class="flex items-center space-x-2"><i class="fa-solid fa-envelope text-crimson-light"></i><span>orders@muskanmeat.com</span></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-serif text-white font-semibold mb-4 text-sm tracking-wider uppercase">Operating Hours</h3>
+                <p class="text-xs mb-2">Monday – Sunday: 6:00 AM – 9:00 PM</p>
+                <p class="text-[11px] text-gray-500">Home delivery available across local residential sectors within 45 minutes.</p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 pt-8 border-t border-gray-900 text-center text-xs text-gray-600">
+            &copy; 2026 Muskan Meat Shop. All Rights Reserved. Engineered with High-Level Code Standards.
+        </div>
+    </footer>
+
+    <!-- Canvas for PNG Generator Script -->
+    <canvas id="rateCanvas" width="1200" height="900" style="display: none;"></canvas>
+
+    <!-- Client-Side Script to render and download PNG Rate Card -->
+    <script>
+        function generatePNGRateCard() {
+            const canvas = document.getElementById('rateCanvas');
+            const ctx = canvas.getContext('2d');
+
+            // Background Fill (Deep Meat Dark)
+            ctx.fillStyle = '#0F0909';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Border Frame
+            ctx.strokeStyle = '#C70039';
+            ctx.lineWidth = 6;
+            ctx.strokeRect(30, 30, canvas.width - 60, canvas.height - 60);
+
+            // Inner Fine Border
+            ctx.strokeStyle = '#5A0000';
+            ctx.lineWidth = 1;
+            ctx.strokeRect(42, 42, canvas.width - 84, canvas.height - 84);
+
+            // Header Title
+            ctx.fillStyle = '#FF4D4D';
+            ctx.font = 'bold 42px "Cinzel", serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('MUSKAN MEAT SHOP', canvas.width / 2, 110);
+
+            ctx.fillStyle = '#D1D5DB';
+            ctx.font = '16px "Plus Jakarta Sans", sans-serif';
+            ctx.fillText('OFFICIAL HALAL CUTS & PRICE CATALOGUE (2026)', canvas.width / 2, 145);
+
+            // Divider Line
+            ctx.strokeStyle = '#C70039';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.moveTo(150, 175);
+            ctx.lineTo(canvas.width - 150, 175);
+            ctx.stroke();
+
+            // Table Headers
+            ctx.fillStyle = '#FF4D4D';
+            ctx.font = 'bold 18px "Plus Jakarta Sans", sans-serif';
+            ctx.textAlign = 'left';
+            ctx.fillText('CUT / PRODUCT NAME', 80, 230);
+            ctx.fillText('CATEGORY', 520, 230);
+            ctx.fillText('UNIT', 760, 230);
+            ctx.textAlign = 'right';
+            ctx.fillText('RATE (INR)', canvas.width - 80, 230);
+
+            // Items Data Array
+            const items = [
+                { name: 'Prime Mutton Curry Cut', category: 'Mutton / Goat', unit: '500 Grams', price: '₹780' },
+                { name: 'Chicken Breast Boneless', category: 'Chicken', unit: '500 Grams', price: '₹240' },
+                { name: 'Hand-Ground Mutton Keema', category: 'Mutton / Goat', unit: '500 Grams', price: '₹820' },
+                { name: 'Whole Chicken (Skinless)', category: 'Chicken', unit: '1.2 Kg Unit', price: '₹380' },
+                { name: 'River Rohu Fish Cuts', category: 'Fish / Seafood', unit: '500 Grams', price: '₹320' },
+                { name: 'Muskan BBQ Chicken Wings', category: 'Party Pack', unit: '500 Grams', price: '₹280' }
+            ];
+
+            let startY = 280;
+            ctx.font = '16px "Plus Jakarta Sans", sans-serif';
+
+            items.forEach((item, index) => {
+                // Alternating row background shading
+                if (index % 2 === 0) {
+                    ctx.fillStyle = 'rgba(199, 0, 57, 0.05)';
+                    ctx.fillRect(60, startY - 25, canvas.width - 120, 45);
+                }
+
+                ctx.fillStyle = '#FFFFFF';
+                ctx.textAlign = 'left';
+                ctx.fillText(item.name, 80, startY);
+
+                ctx.fillStyle = '#A0A0A0';
+                ctx.fillText(item.category, 520, startY);
+                ctx.fillText(item.unit, 760, startY);
+
+                ctx.fillStyle = '#FF4D4D';
+                ctx.textAlign = 'right';
+                ctx.fillText(item.price, canvas.width - 80, startY);
+
+                startY += 55;
+            });
+
+            // Footer Note inside image
+            ctx.fillStyle = '#777777';
+            ctx.font = 'italic 13px "Plus Jakarta Sans", sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('100% Halal Certified. Fresh stock processed daily. Valid through Q4 2026.', canvas.width / 2, canvas.height - 65);
+
+            // Trigger download
+            const link = document.createElement('a');
+            link.download = 'Muskan-Meat-Rate-Card.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>
